@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+const React = require('react')
+const { Router, Route, IndexRoute, hashHistory } = require('react-router')
 import './App.css';
 
-class App extends Component {
+const Layout = require('./components/Layout')
+const Landing = require('./components/Landing')
+
+const App = React.createClass({
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          MARK!
-        </p>
-      </div>
+      <Router history={hashHistory}>
+        <Route path='/' component={Layout}>
+          <IndexRoute component={Landing} />
+        </Route>
+      </Router>
     );
   }
-}
+})
 
-export default App;
+module.exports = App

@@ -1,24 +1,72 @@
-.App {
+a.navbar-brand > span {
+  font-weight: bold;
+  color: #C89C00;
+}
+
+li.nav-item > a.nav-link {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding-left: 20px;
+}
+
+.main-container {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.muted-text {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+div.list-group-item.list-group-item-action.players {
+  background-color: #86BBD8;
+  & > h5.list-group-item-heading {
+    color: #fff;
+  }
+}
+
+div.list-group-item.list-group-item-action.games {
+  background-color: #33658A;
+  & > h5.list-group-item-heading {
+    color: #fff;
+  }
+}
+
+div.list-group-item.list-group-item-action.seasons {
+  background-color: #88A0A8;
+  & > h5.list-group-item-heading {
+    color: #fff;
+  }
+}
+
+div.list-group-item.list-group-item-action.yellow {
+  background-color: #C89C00;
+  & > h5.list-group-item-heading {
+    color: #fff;
+  }
+}
+
+table {
+  font-size: 0.9em;
+}
+
+thead > tr > th, tbody > tr > td {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.table-row, .div-row {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+p.list-group-item-text > span {
+  color: red;
 }
 
-.App-intro {
-  font-size: large;
+div.participant-main {
+  padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+div.list-group-item.list-group-item-action.stat-line {
+  background-color: #e7e7e7;
 }

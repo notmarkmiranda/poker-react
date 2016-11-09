@@ -9,7 +9,7 @@ const Landing = React.createClass({
     }
   },
   componentWillMount () {
-    const url = "http://pokerseason.herokuapp.com/api/v1/participants"
+    const url = "https://pokerseason.herokuapp.com/api/v1/participants"
     Request.get(url).then((response) => {
       this.setState({
         participants: response.body
